@@ -10,15 +10,11 @@ body {
 
 #allTodos {
   background: rgba(0, 0, 0, 0.6);
-<<<<<<< Updated upstream
-  /* margin: 0 auto; */
-=======
   width: 300px;
   height: 40px;
   margin: 0 0;
   font-family: 'Roboto', serif;
   color: whitesmoke;
->>>>>>> Stashed changes
 }
 
 ul {
@@ -53,3 +49,20 @@ input:focus {
 ::-webkit-input-placeholder {
   text-align: center;
 }
+
+/* .circle {
+  height: 50px;
+  width: 50px;
+  border: 3px solid grey;
+  background: transparent;
+  transition: box-shadow .5s, color .5s;
+  background-size: 0 0;
+  background-position: 50% 50%;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 50px white
+}
+
+.circle:hover {
+  box-shadow: inset 0 0 0 0px white;
+  color: azure;
+} */
