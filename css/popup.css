@@ -1,22 +1,26 @@
 body {
-  width: 200px;
-  height: 200px;
-}
-
-#allTodos {
   background: rgba(0, 0, 0, 0.6);
-  /* margin: 0 auto; */
+  width: 300px;
+  height: 40px;
+  margin: 0 0;
 }
 
 ul {
+  width:300px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+::-webkit-input-placeholder {
+  color:white;
+}
+
+
 li {
   height: 40px;
   line-height: 40px;
+  text-indent: 10px;
 }
 
 li:nth-child(2n){
@@ -35,6 +39,6 @@ input:focus {
   outline:none;
 }
 
-::-webkit-input-placeholder {
-  text-align: center;
+.completed {
+  text-decoration: line-through;
 }
