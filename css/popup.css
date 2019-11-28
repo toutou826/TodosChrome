@@ -1,0 +1,40 @@
+body {
+  width: 200px;
+  height: 200px;
+}
+
+#allTodos {
+  background: rgba(0, 0, 0, 0.6);
+  /* margin: 0 auto; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 40px;
+  line-height: 40px;
+}
+
+li:nth-child(2n){
+  background: rgba(0, 0, 0, 0.4);
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+}
+
+input:focus {
+  outline:none;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
