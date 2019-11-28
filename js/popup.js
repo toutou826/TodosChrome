@@ -14,7 +14,7 @@ $("ul").on("click","li.todos",function(){
 
 
 
-//Remove todo after clicking on circle
+//Remove todo after double clicking
 $("ul").on("dblclick","li.todos",function(event){
     $(this).fadeOut("slow");
     $(this).remove();
