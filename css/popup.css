@@ -30,6 +30,7 @@ li {
   text-indent: 10px;
 }
 
+/* Different color for every other li */
 li:nth-child(2n){
   background: rgba(0, 0, 0, 0.4);
 }
@@ -46,30 +47,5 @@ input {
 
 input:focus {
   outline:none;
-}
-
-/* ::-webkit-input-placeholder {
-  text-align: center;
-} */
-
-.circle {
-  width: 12px;
-  height: 12px;
-  border: 1px solid lightgray;
-  border-radius: 99999px;
-  background: transparent;
-  position: relative;
-  outline: none;
-  padding-right: 2px;
-}
-
-.circle:hover {
-  box-shadow: inset 0 0 0 0px white;
-  color: azure;
-}
-
-.completed {
-  text-decoration: line-through;
-  text-decoration-color: black;
 }
 
