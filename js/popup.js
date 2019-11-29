@@ -39,6 +39,12 @@ $("ul").on("dblclick","li.todos",function(event){
 
 //Drag and sort
 $(function(){
-    $( "ul" ).sortable();
+    $("ul").sortable({
+        update:function(){
+        alert($("ul").toArray());
+        // todoArray = $("ul").toArray;
+        // chrome.storage.sync.set({'todo': todoArray},function(){});
+        }
+    });
 });
 
