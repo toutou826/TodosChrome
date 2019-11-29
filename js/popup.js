@@ -30,7 +30,8 @@ $("input").keypress(function(event){
 
 //Remove todo after double clicking
 $("ul").on("dblclick","li.todos",function(event){
-    todoArray.splice(todoArray.indexOf($(this)),1);
+    todoArray.splice(todoArray.indexOf($(this)),2);
+    alert(todoArray);
     chrome.storage.sync.set({'todo': todoArray},function(){});
     $(this).fadeOut("slow");
     $(this).remove();
@@ -41,9 +42,13 @@ $("ul").on("dblclick","li.todos",function(event){
 $(function(){
     $("ul").sortable({
         update:function(){
-        alert($("ul").toArray());
-        // todoArray = $("ul").toArray;
-        // chrome.storage.sync.set({'todo': todoArray},function(){});
+        todoArray = []
+        $("li").each(function(){
+            if($(this).class != "addRow" && $(this).text()!=""){
+                todoArray.push($(this).text());
+            }
+          });
+        chrome.storage.sync.set({'todo': todoArray},function(){});
         }
     });
 });
