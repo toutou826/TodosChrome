@@ -3,3 +3,6 @@
  Double click to delete todo.
  Drag to re-order todo.
  Allow syncing via chrome's storage API.
+
+# preview:
+![Preview](preview.png)
