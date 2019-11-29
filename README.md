@@ -7,5 +7,5 @@
 # Link to Chrome Web Store:
 https://chrome.google.com/webstore/detail/todo-list/lfifaemfdkjfddlfcnjjbnoejjdnccof
 
-# preview:
+# Preview:
 ![Preview](preview.png)
